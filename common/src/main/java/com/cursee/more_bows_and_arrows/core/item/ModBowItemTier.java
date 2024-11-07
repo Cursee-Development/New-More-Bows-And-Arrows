@@ -10,7 +10,7 @@ import org.jetbrains.annotations.NotNull;
 import java.util.function.Supplier;
 
 @SuppressWarnings("deprecation")
-public enum ModItemTiers implements Tier {
+public enum ModBowItemTier implements Tier {
 
     WOOD(350, 1.0f, () -> Ingredient.of(ItemTags.PLANKS)),
     GOLD(400, 2.0f, () -> Ingredient.of(Items.GOLD_INGOT)),
@@ -36,7 +36,7 @@ public enum ModItemTiers implements Tier {
     private final int enchantmentValue;
     private final LazyLoadedValue<Ingredient> repairIngredient;
 
-    ModItemTiers(int uses, float damage, Supplier<Ingredient> repairIngredient) {
+    ModBowItemTier(int uses, float damage, Supplier<Ingredient> repairIngredient) {
         this.level = 1;
         this.uses = uses;
         this.speed = 4.0f;
