@@ -3,6 +3,7 @@ package com.cursee.more_bows_and_arrows.core.registry;
 import com.cursee.more_bows_and_arrows.Constants;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.registries.RegistryObject;
 
@@ -11,6 +12,7 @@ public class ModTabsForge {
     public static void register() {}
 
     public static final RegistryObject<CreativeModeTab> MORE_BOWS_AND_ARROWS = RegistryForge.registerTab(Constants.MOD_ID, () -> CreativeModeTab.builder()
+            .withTabsBefore(CreativeModeTabs.SPAWN_EGGS)
             .title(Component.translatable("itemGroup.moreBowsAndArrows"))
             .icon(() -> new ItemStack(ModBowItemsForge.BLAZE_BOW.get()))
             .displayItems(((itemDisplayParameters, output) -> {
