@@ -18,7 +18,7 @@ public class MoreBowsAndArrowsNeoForge {
         RegistryNeoForge.register(modEventBus);
     }
 
-    @EventBusSubscriber(modid = Constants.MOD_ID, bus = EventBusSubscriber.Bus.GAME)
+    @EventBusSubscriber(modid = Constants.MOD_ID, bus = EventBusSubscriber.Bus.MOD)
     public static class CommonEvents {
 
         @SubscribeEvent
