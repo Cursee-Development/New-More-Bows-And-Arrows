@@ -15,20 +15,20 @@ import java.util.function.Supplier;
 @SuppressWarnings("deprecation")
 public enum ModBowItemTier implements Tier {
 
-    WOOD(350, 1.0f, () -> Ingredient.of(ItemTags.PLANKS)),
-    GOLD(400, 2.0f, () -> Ingredient.of(Items.GOLD_INGOT)),
+    WOOD(350, 2.0f, () -> Ingredient.of(ItemTags.PLANKS)),
+    GOLD(400, 3.0f, () -> Ingredient.of(Items.GOLD_INGOT)),
     IRON(500, 2.5f, () -> Ingredient.of(Items.IRON_INGOT)),
-    DIAMOND(1000, 3.0f, () -> Ingredient.of(Items.DIAMOND)),
-    NETHERITE(2000, 4.5f, () -> Ingredient.of(Items.NETHERITE_INGOT)),
+    DIAMOND(1000, 5.0f, () -> Ingredient.of(Items.DIAMOND)),
+    NETHERITE(2000, 6.0f, () -> Ingredient.of(Items.NETHERITE_INGOT)),
 
     COPPER(500, 2.0f, () -> Ingredient.of(Items.COPPER_INGOT)),
-    PAPER(300, 0.1f, () -> Ingredient.of(Items.PAPER)),
-    MOSS(300, 0.1f, () -> Ingredient.of(Items.MOSS_BLOCK)),
-    LAPIS(400, 1.5f, () -> Ingredient.of(Items.LAPIS_LAZULI)),
-    AMETHYST(400, 1.5f, () -> Ingredient.of(Items.AMETHYST_SHARD)),
+    PAPER(300, 0.0f, () -> Ingredient.of(Items.PAPER)),
+    MOSS(300, 0.0f, () -> Ingredient.of(Items.MOSS_BLOCK)),
+    LAPIS(400, 2.0f, () -> Ingredient.of(Items.LAPIS_LAZULI)),
+    AMETHYST(400, 2.0f, () -> Ingredient.of(Items.AMETHYST_SHARD)),
     BONE(385, 2.0f, () -> Ingredient.of(Items.BONE)),
-    COAL(385, 1.5f, () -> Ingredient.of(Items.COAL, Items.CHARCOAL)),
-    EMERALD(400, 1.5f, () -> Ingredient.of(Items.EMERALD)),
+    COAL(385, 2.0f, () -> Ingredient.of(Items.COAL, Items.CHARCOAL)),
+    EMERALD(400, 3.0f, () -> Ingredient.of(Items.EMERALD)),
     BLAZE(750, 3.0f, () -> Ingredient.of(Items.BLAZE_ROD)),
     OBSIDIAN(750, 4.0f, () -> Ingredient.of(Items.OBSIDIAN, Items.CRYING_OBSIDIAN));
 
