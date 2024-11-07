@@ -34,28 +34,28 @@ public class DispenserRegistryForge {
         });
         DISPENSER_OBJECT_MAP.put(ModArrowItemsForge.ENDER_PEARL_ARROW.get(), new AbstractProjectileDispenseBehavior() {
             public @NotNull Projectile getProjectile(@NotNull Level level, @NotNull Position pos, @NotNull ItemStack stack) {
-                TypedArrowEntity arrow = new TypedArrowEntity(level, pos.x(), pos.y(), pos.z(), ModArrowItemTier.AMETHYST, ModArrowItemsForge.AMETHYST_ARROW.get());
+                TypedArrowEntity arrow = new TypedArrowEntity(level, pos.x(), pos.y(), pos.z(), ModArrowItemTier.ENDER_PEARL, ModArrowItemsForge.ENDER_PEARL_ARROW.get());
                 arrow.pickup = AbstractArrow.Pickup.ALLOWED;
                 return arrow;
             }
         });
         DISPENSER_OBJECT_MAP.put(ModArrowItemsForge.TNT_ARROW.get(), new AbstractProjectileDispenseBehavior() {
             public @NotNull Projectile getProjectile(@NotNull Level level, @NotNull Position pos, @NotNull ItemStack stack) {
-                TypedArrowEntity arrow = new TypedArrowEntity(level, pos.x(), pos.y(), pos.z(), ModArrowItemTier.AMETHYST, ModArrowItemsForge.AMETHYST_ARROW.get());
+                TypedArrowEntity arrow = new TypedArrowEntity(level, pos.x(), pos.y(), pos.z(), ModArrowItemTier.TNT, ModArrowItemsForge.TNT_ARROW.get());
                 arrow.pickup = AbstractArrow.Pickup.ALLOWED;
                 return arrow;
             }
         });
         DISPENSER_OBJECT_MAP.put(ModArrowItemsForge.PAPER_ARROW.get(), new AbstractProjectileDispenseBehavior() {
             public @NotNull Projectile getProjectile(@NotNull Level level, @NotNull Position pos, @NotNull ItemStack stack) {
-                TypedArrowEntity arrow = new TypedArrowEntity(level, pos.x(), pos.y(), pos.z(), ModArrowItemTier.AMETHYST, ModArrowItemsForge.AMETHYST_ARROW.get());
+                TypedArrowEntity arrow = new TypedArrowEntity(level, pos.x(), pos.y(), pos.z(), ModArrowItemTier.PAPER, ModArrowItemsForge.PAPER_ARROW.get());
                 arrow.pickup = AbstractArrow.Pickup.ALLOWED;
                 return arrow;
             }
         });
         DISPENSER_OBJECT_MAP.put(ModArrowItemsForge.MOSS_ARROW.get(), new AbstractProjectileDispenseBehavior() {
             public @NotNull Projectile getProjectile(@NotNull Level level, @NotNull Position pos, @NotNull ItemStack stack) {
-                TypedArrowEntity arrow = new TypedArrowEntity(level, pos.x(), pos.y(), pos.z(), ModArrowItemTier.AMETHYST, ModArrowItemsForge.AMETHYST_ARROW.get());
+                TypedArrowEntity arrow = new TypedArrowEntity(level, pos.x(), pos.y(), pos.z(), ModArrowItemTier.MOSS, ModArrowItemsForge.MOSS_ARROW.get());
                 arrow.pickup = AbstractArrow.Pickup.ALLOWED;
                 return arrow;
             }
@@ -70,63 +70,63 @@ public class DispenserRegistryForge {
         });
         DISPENSER_OBJECT_MAP.put(ModArrowItemsForge.BAMBOO_ARROW.get(), new AbstractProjectileDispenseBehavior() {
             public @NotNull Projectile getProjectile(@NotNull Level level, @NotNull Position pos, @NotNull ItemStack stack) {
-                TypedArrowEntity arrow = new TypedArrowEntity(level, pos.x(), pos.y(), pos.z(), ModArrowItemTier.AMETHYST, ModArrowItemsForge.AMETHYST_ARROW.get());
+                TypedArrowEntity arrow = new TypedArrowEntity(level, pos.x(), pos.y(), pos.z(), ModArrowItemTier.BAMBOO, ModArrowItemsForge.BAMBOO_ARROW.get());
                 arrow.pickup = AbstractArrow.Pickup.ALLOWED;
                 return arrow;
             }
         });
         DISPENSER_OBJECT_MAP.put(ModArrowItemsForge.BLAZE_ROD_ARROW.get(), new AbstractProjectileDispenseBehavior() {
             public @NotNull Projectile getProjectile(@NotNull Level level, @NotNull Position pos, @NotNull ItemStack stack) {
-                TypedArrowEntity arrow = new TypedArrowEntity(level, pos.x(), pos.y(), pos.z(), ModArrowItemTier.AMETHYST, ModArrowItemsForge.AMETHYST_ARROW.get());
+                TypedArrowEntity arrow = new TypedArrowEntity(level, pos.x(), pos.y(), pos.z(), ModArrowItemTier.BLAZE_ROD, ModArrowItemsForge.BLAZE_ROD_ARROW.get());
                 arrow.pickup = AbstractArrow.Pickup.ALLOWED;
                 return arrow;
             }
         });
         DISPENSER_OBJECT_MAP.put(ModArrowItemsForge.BONE_ARROW.get(), new AbstractProjectileDispenseBehavior() {
             public @NotNull Projectile getProjectile(@NotNull Level level, @NotNull Position pos, @NotNull ItemStack stack) {
-                TypedArrowEntity arrow = new TypedArrowEntity(level, pos.x(), pos.y(), pos.z(), ModArrowItemTier.AMETHYST, ModArrowItemsForge.AMETHYST_ARROW.get());
+                TypedArrowEntity arrow = new TypedArrowEntity(level, pos.x(), pos.y(), pos.z(), ModArrowItemTier.BONE, ModArrowItemsForge.BONE_ARROW.get());
                 arrow.pickup = AbstractArrow.Pickup.ALLOWED;
                 return arrow;
             }
         });
         DISPENSER_OBJECT_MAP.put(ModArrowItemsForge.CACTUS_ARROW.get(), new AbstractProjectileDispenseBehavior() {
             public @NotNull Projectile getProjectile(@NotNull Level level, @NotNull Position pos, @NotNull ItemStack stack) {
-                TypedArrowEntity arrow = new TypedArrowEntity(level, pos.x(), pos.y(), pos.z(), ModArrowItemTier.AMETHYST, ModArrowItemsForge.AMETHYST_ARROW.get());
+                TypedArrowEntity arrow = new TypedArrowEntity(level, pos.x(), pos.y(), pos.z(), ModArrowItemTier.CACTUS, ModArrowItemsForge.CACTUS_ARROW.get());
                 arrow.pickup = AbstractArrow.Pickup.ALLOWED;
                 return arrow;
             }
         });
         DISPENSER_OBJECT_MAP.put(ModArrowItemsForge.COAL_ARROW.get(), new AbstractProjectileDispenseBehavior() {
             public @NotNull Projectile getProjectile(@NotNull Level level, @NotNull Position pos, @NotNull ItemStack stack) {
-                TypedArrowEntity arrow = new TypedArrowEntity(level, pos.x(), pos.y(), pos.z(), ModArrowItemTier.AMETHYST, ModArrowItemsForge.AMETHYST_ARROW.get());
+                TypedArrowEntity arrow = new TypedArrowEntity(level, pos.x(), pos.y(), pos.z(), ModArrowItemTier.COAL, ModArrowItemsForge.COAL_ARROW.get());
                 arrow.pickup = AbstractArrow.Pickup.ALLOWED;
                 return arrow;
             }
         });
         DISPENSER_OBJECT_MAP.put(ModArrowItemsForge.EMERALD_ARROW.get(), new AbstractProjectileDispenseBehavior() {
             public @NotNull Projectile getProjectile(@NotNull Level level, @NotNull Position pos, @NotNull ItemStack stack) {
-                TypedArrowEntity arrow = new TypedArrowEntity(level, pos.x(), pos.y(), pos.z(), ModArrowItemTier.AMETHYST, ModArrowItemsForge.AMETHYST_ARROW.get());
+                TypedArrowEntity arrow = new TypedArrowEntity(level, pos.x(), pos.y(), pos.z(), ModArrowItemTier.EMERALD, ModArrowItemsForge.EMERALD_ARROW.get());
                 arrow.pickup = AbstractArrow.Pickup.ALLOWED;
                 return arrow;
             }
         });
         DISPENSER_OBJECT_MAP.put(ModArrowItemsForge.LAPIS_ARROW.get(), new AbstractProjectileDispenseBehavior() {
             public @NotNull Projectile getProjectile(@NotNull Level level, @NotNull Position pos, @NotNull ItemStack stack) {
-                TypedArrowEntity arrow = new TypedArrowEntity(level, pos.x(), pos.y(), pos.z(), ModArrowItemTier.AMETHYST, ModArrowItemsForge.AMETHYST_ARROW.get());
+                TypedArrowEntity arrow = new TypedArrowEntity(level, pos.x(), pos.y(), pos.z(), ModArrowItemTier.LAPIS, ModArrowItemsForge.LAPIS_ARROW.get());
                 arrow.pickup = AbstractArrow.Pickup.ALLOWED;
                 return arrow;
             }
         });
         DISPENSER_OBJECT_MAP.put(ModArrowItemsForge.OBSIDIAN_ARROW.get(), new AbstractProjectileDispenseBehavior() {
             public @NotNull Projectile getProjectile(@NotNull Level level, @NotNull Position pos, @NotNull ItemStack stack) {
-                TypedArrowEntity arrow = new TypedArrowEntity(level, pos.x(), pos.y(), pos.z(), ModArrowItemTier.AMETHYST, ModArrowItemsForge.AMETHYST_ARROW.get());
+                TypedArrowEntity arrow = new TypedArrowEntity(level, pos.x(), pos.y(), pos.z(), ModArrowItemTier.OBSIDIAN, ModArrowItemsForge.OBSIDIAN_ARROW.get());
                 arrow.pickup = AbstractArrow.Pickup.ALLOWED;
                 return arrow;
             }
         });
         DISPENSER_OBJECT_MAP.put(ModArrowItemsForge.FLINT_ARROW.get(), new AbstractProjectileDispenseBehavior() {
             public @NotNull Projectile getProjectile(@NotNull Level level, @NotNull Position pos, @NotNull ItemStack stack) {
-                TypedArrowEntity arrow = new TypedArrowEntity(level, pos.x(), pos.y(), pos.z(), ModArrowItemTier.AMETHYST, ModArrowItemsForge.AMETHYST_ARROW.get());
+                TypedArrowEntity arrow = new TypedArrowEntity(level, pos.x(), pos.y(), pos.z(), ModArrowItemTier.FLINT, ModArrowItemsForge.FLINT_ARROW.get());
                 arrow.pickup = AbstractArrow.Pickup.ALLOWED;
                 return arrow;
             }
@@ -134,35 +134,35 @@ public class DispenserRegistryForge {
 
         DISPENSER_OBJECT_MAP.put(ModArrowItemsForge.IRON_ARROW.get(), new AbstractProjectileDispenseBehavior() {
             public @NotNull Projectile getProjectile(@NotNull Level level, @NotNull Position pos, @NotNull ItemStack stack) {
-                TypedArrowEntity arrow = new TypedArrowEntity(level, pos.x(), pos.y(), pos.z(), ModArrowItemTier.AMETHYST, ModArrowItemsForge.AMETHYST_ARROW.get());
+                TypedArrowEntity arrow = new TypedArrowEntity(level, pos.x(), pos.y(), pos.z(), ModArrowItemTier.IRON, ModArrowItemsForge.IRON_ARROW.get());
                 arrow.pickup = AbstractArrow.Pickup.ALLOWED;
                 return arrow;
             }
         });
         DISPENSER_OBJECT_MAP.put(ModArrowItemsForge.COPPER_ARROW.get(), new AbstractProjectileDispenseBehavior() {
             public @NotNull Projectile getProjectile(@NotNull Level level, @NotNull Position pos, @NotNull ItemStack stack) {
-                TypedArrowEntity arrow = new TypedArrowEntity(level, pos.x(), pos.y(), pos.z(), ModArrowItemTier.AMETHYST, ModArrowItemsForge.AMETHYST_ARROW.get());
+                TypedArrowEntity arrow = new TypedArrowEntity(level, pos.x(), pos.y(), pos.z(), ModArrowItemTier.COPPER, ModArrowItemsForge.COPPER_ARROW.get());
                 arrow.pickup = AbstractArrow.Pickup.ALLOWED;
                 return arrow;
             }
         });
         DISPENSER_OBJECT_MAP.put(ModArrowItemsForge.GOLD_ARROW.get(), new AbstractProjectileDispenseBehavior() {
             public @NotNull Projectile getProjectile(@NotNull Level level, @NotNull Position pos, @NotNull ItemStack stack) {
-                TypedArrowEntity arrow = new TypedArrowEntity(level, pos.x(), pos.y(), pos.z(), ModArrowItemTier.AMETHYST, ModArrowItemsForge.AMETHYST_ARROW.get());
+                TypedArrowEntity arrow = new TypedArrowEntity(level, pos.x(), pos.y(), pos.z(), ModArrowItemTier.GOLD, ModArrowItemsForge.GOLD_ARROW.get());
                 arrow.pickup = AbstractArrow.Pickup.ALLOWED;
                 return arrow;
             }
         });
         DISPENSER_OBJECT_MAP.put(ModArrowItemsForge.DIAMOND_ARROW.get(), new AbstractProjectileDispenseBehavior() {
             public @NotNull Projectile getProjectile(@NotNull Level level, @NotNull Position pos, @NotNull ItemStack stack) {
-                TypedArrowEntity arrow = new TypedArrowEntity(level, pos.x(), pos.y(), pos.z(), ModArrowItemTier.AMETHYST, ModArrowItemsForge.AMETHYST_ARROW.get());
+                TypedArrowEntity arrow = new TypedArrowEntity(level, pos.x(), pos.y(), pos.z(), ModArrowItemTier.DIAMOND, ModArrowItemsForge.DIAMOND_ARROW.get());
                 arrow.pickup = AbstractArrow.Pickup.ALLOWED;
                 return arrow;
             }
         });
         DISPENSER_OBJECT_MAP.put(ModArrowItemsForge.NETHERITE_ARROW.get(), new AbstractProjectileDispenseBehavior() {
             public @NotNull Projectile getProjectile(@NotNull Level level, @NotNull Position pos, @NotNull ItemStack stack) {
-                TypedArrowEntity arrow = new TypedArrowEntity(level, pos.x(), pos.y(), pos.z(), ModArrowItemTier.AMETHYST, ModArrowItemsForge.AMETHYST_ARROW.get());
+                TypedArrowEntity arrow = new TypedArrowEntity(level, pos.x(), pos.y(), pos.z(), ModArrowItemTier.NETHERITE, ModArrowItemsForge.NETHERITE_ARROW.get());
                 arrow.pickup = AbstractArrow.Pickup.ALLOWED;
                 return arrow;
             }
