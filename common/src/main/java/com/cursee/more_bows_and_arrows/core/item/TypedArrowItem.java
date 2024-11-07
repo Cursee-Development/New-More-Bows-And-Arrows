@@ -1,6 +1,5 @@
 package com.cursee.more_bows_and_arrows.core.item;
 
-import com.cursee.more_bows_and_arrows.core.entity.ModEntityTier;
 import com.cursee.more_bows_and_arrows.core.entity.TypedArrowEntity;
 import com.cursee.more_bows_and_arrows.platform.Services;
 import net.minecraft.network.chat.Component;
@@ -18,54 +17,45 @@ import java.util.List;
 
 public class TypedArrowItem extends ArrowItem {
 
-    private final Type type;
+    private final ModArrowItemTier type;
 
-    public TypedArrowItem(Type type) {
+    public TypedArrowItem(ModArrowItemTier type) {
         super(new Properties());
         this.type = type;
     }
 
-    public Type getType() {
+    public ModArrowItemTier getType() {
         return type;
-    }
-
-    public enum Type {
-        AMETHYST, BAMBOO, BLAZE_ROD, BONE, CACTUS, COAL, COPPER, DIAMOND, EMERALD, ENDER_PEARL,
-        FLINT_AND_STEEL, FLINT, GOLD, IRON, LAPIS, MOSS, NETHERITE, OBSIDIAN, PAPER, TNT;
     }
 
     @Override
     public @NotNull AbstractArrow createArrow(@NotNull Level level, @NotNull ItemStack itemStack, @NotNull LivingEntity entity) {
         return switch (this.type) {
-            case AMETHYST -> new TypedArrowEntity(level, entity, ModEntityTier.AMETHYST, Services.PLATFORM.itemFromType(this.type));
-            case BAMBOO -> new TypedArrowEntity(level, entity, ModEntityTier.BAMBOO, Services.PLATFORM.itemFromType(this.type));
-            case BLAZE_ROD -> new TypedArrowEntity(level, entity, ModEntityTier.BLAZE_ROD, Services.PLATFORM.itemFromType(this.type));
-            case BONE -> new TypedArrowEntity(level, entity, ModEntityTier.BONE, Services.PLATFORM.itemFromType(this.type));
-            case CACTUS -> new TypedArrowEntity(level, entity, ModEntityTier.CACTUS, Services.PLATFORM.itemFromType(this.type));
-            case COAL -> new TypedArrowEntity(level, entity, ModEntityTier.COAL, Services.PLATFORM.itemFromType(this.type));
-            case COPPER -> new TypedArrowEntity(level, entity, ModEntityTier.COPPER, Services.PLATFORM.itemFromType(this.type));
-            case DIAMOND -> new TypedArrowEntity(level, entity, ModEntityTier.DIAMOND, Services.PLATFORM.itemFromType(this.type));
-            case EMERALD -> new TypedArrowEntity(level, entity, ModEntityTier.EMERALD, Services.PLATFORM.itemFromType(this.type));
-            case ENDER_PEARL -> new TypedArrowEntity(level, entity, ModEntityTier.ENDER_PEARL, Services.PLATFORM.itemFromType(this.type));
-            case FLINT_AND_STEEL -> new TypedArrowEntity(level, entity, ModEntityTier.FLINT_AND_STEEL, Services.PLATFORM.itemFromType(this.type));
-            case FLINT -> new TypedArrowEntity(level, entity, ModEntityTier.FLINT, Services.PLATFORM.itemFromType(this.type));
-            case GOLD -> new TypedArrowEntity(level, entity, ModEntityTier.GOLD, Services.PLATFORM.itemFromType(this.type));
-            case IRON -> new TypedArrowEntity(level, entity, ModEntityTier.IRON, Services.PLATFORM.itemFromType(this.type));
-            case LAPIS -> new TypedArrowEntity(level, entity, ModEntityTier.LAPIS, Services.PLATFORM.itemFromType(this.type));
-            case MOSS -> new TypedArrowEntity(level, entity, ModEntityTier.MOSS, Services.PLATFORM.itemFromType(this.type));
-            case NETHERITE -> new TypedArrowEntity(level, entity, ModEntityTier.NETHERITE, Services.PLATFORM.itemFromType(this.type));
-            case OBSIDIAN -> new TypedArrowEntity(level, entity, ModEntityTier.OBSIDIAN, Services.PLATFORM.itemFromType(this.type));
-            case PAPER -> new TypedArrowEntity(level, entity, ModEntityTier.PAPER, Services.PLATFORM.itemFromType(this.type));
-            case TNT -> new TypedArrowEntity(level, entity, ModEntityTier.TNT, Services.PLATFORM.itemFromType(this.type));
+            case AMETHYST -> new TypedArrowEntity(level, entity, ModArrowItemTier.AMETHYST, Services.PLATFORM.itemFromType(this.type));
+            case BAMBOO -> new TypedArrowEntity(level, entity, ModArrowItemTier.BAMBOO, Services.PLATFORM.itemFromType(this.type));
+            case BLAZE_ROD -> new TypedArrowEntity(level, entity, ModArrowItemTier.BLAZE_ROD, Services.PLATFORM.itemFromType(this.type));
+            case BONE -> new TypedArrowEntity(level, entity, ModArrowItemTier.BONE, Services.PLATFORM.itemFromType(this.type));
+            case CACTUS -> new TypedArrowEntity(level, entity, ModArrowItemTier.CACTUS, Services.PLATFORM.itemFromType(this.type));
+            case COAL -> new TypedArrowEntity(level, entity, ModArrowItemTier.COAL, Services.PLATFORM.itemFromType(this.type));
+            case COPPER -> new TypedArrowEntity(level, entity, ModArrowItemTier.COPPER, Services.PLATFORM.itemFromType(this.type));
+            case DIAMOND -> new TypedArrowEntity(level, entity, ModArrowItemTier.DIAMOND, Services.PLATFORM.itemFromType(this.type));
+            case EMERALD -> new TypedArrowEntity(level, entity, ModArrowItemTier.EMERALD, Services.PLATFORM.itemFromType(this.type));
+            case ENDER_PEARL -> new TypedArrowEntity(level, entity, ModArrowItemTier.ENDER_PEARL, Services.PLATFORM.itemFromType(this.type));
+            case FLINT_AND_STEEL -> new TypedArrowEntity(level, entity, ModArrowItemTier.FLINT_AND_STEEL, Services.PLATFORM.itemFromType(this.type));
+            case FLINT -> new TypedArrowEntity(level, entity, ModArrowItemTier.FLINT, Services.PLATFORM.itemFromType(this.type));
+            case GOLD -> new TypedArrowEntity(level, entity, ModArrowItemTier.GOLD, Services.PLATFORM.itemFromType(this.type));
+            case IRON -> new TypedArrowEntity(level, entity, ModArrowItemTier.IRON, Services.PLATFORM.itemFromType(this.type));
+            case LAPIS -> new TypedArrowEntity(level, entity, ModArrowItemTier.LAPIS, Services.PLATFORM.itemFromType(this.type));
+            case MOSS -> new TypedArrowEntity(level, entity, ModArrowItemTier.MOSS, Services.PLATFORM.itemFromType(this.type));
+            case NETHERITE -> new TypedArrowEntity(level, entity, ModArrowItemTier.NETHERITE, Services.PLATFORM.itemFromType(this.type));
+            case OBSIDIAN -> new TypedArrowEntity(level, entity, ModArrowItemTier.OBSIDIAN, Services.PLATFORM.itemFromType(this.type));
+            case PAPER -> new TypedArrowEntity(level, entity, ModArrowItemTier.PAPER, Services.PLATFORM.itemFromType(this.type));
+            case TNT -> new TypedArrowEntity(level, entity, ModArrowItemTier.TNT, Services.PLATFORM.itemFromType(this.type));
         };
     }
 
     @Override
     public void appendHoverText(ItemStack itemStack, @Nullable Level level, List<Component> list, TooltipFlag tooltipFlag) {
-
-//        if (!Services.PLATFORM.isModLoaded("tooltipfix")) {
-//            return;
-//        }
 
         switch (this.type) {
 

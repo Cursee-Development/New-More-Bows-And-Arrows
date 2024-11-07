@@ -1,8 +1,8 @@
 package com.cursee.more_bows_and_arrows.platform;
 
-import com.cursee.more_bows_and_arrows.core.entity.ModEntityTier;
-import com.cursee.more_bows_and_arrows.core.item.TypedArrowItem;
+import com.cursee.more_bows_and_arrows.core.item.ModArrowItemTier;
 import com.cursee.more_bows_and_arrows.core.registry.ModArrowItemsForge;
+import com.cursee.more_bows_and_arrows.core.registry.ModBowItemsForge;
 import com.cursee.more_bows_and_arrows.core.registry.ModEntityTypesForge;
 import com.cursee.more_bows_and_arrows.platform.services.IPlatformHelper;
 import net.minecraft.world.entity.EntityType;
@@ -31,7 +31,7 @@ public class ForgePlatformHelper implements IPlatformHelper {
     }
 
     @Override
-    public EntityType entityFromTier(ModEntityTier tier) {
+    public EntityType entityFromTier(ModArrowItemTier tier) {
         return switch (tier) {
             case AMETHYST -> ModEntityTypesForge.AMETHYST_ARROW.get();
             case BAMBOO -> ModEntityTypesForge.BAMBOO_ARROW.get();
@@ -57,7 +57,7 @@ public class ForgePlatformHelper implements IPlatformHelper {
     }
 
     @Override
-    public Item itemFromType(TypedArrowItem.Type type) {
+    public Item itemFromType(ModArrowItemTier type) {
         return switch(type) {
             case AMETHYST -> ModArrowItemsForge.AMETHYST_ARROW.get();
             case BAMBOO -> ModArrowItemsForge.BAMBOO_ARROW.get();
@@ -80,5 +80,35 @@ public class ForgePlatformHelper implements IPlatformHelper {
             case PAPER -> ModArrowItemsForge.PAPER_ARROW.get();
             case TNT -> ModArrowItemsForge.TNT_ARROW.get();
         };
+    }
+
+    @Override
+    public Item blaze_bow() {
+        return ModBowItemsForge.BLAZE_BOW.get();
+    }
+
+    @Override
+    public Item bamboo_bow() {
+        return ModBowItemsForge.BAMBOO_BOW.get();
+    }
+
+    @Override
+    public Item copper_bow() {
+        return ModBowItemsForge.COPPER_BOW.get();
+    }
+
+    @Override
+    public Item moss_bow() {
+        return ModBowItemsForge.MOSS_BOW.get();
+    }
+
+    @Override
+    public Item paper_bow() {
+        return ModBowItemsForge.PAPER_BOW.get();
+    }
+
+    @Override
+    public Item iron_bow() {
+        return ModBowItemsForge.IRON_BOW.get();
     }
 }

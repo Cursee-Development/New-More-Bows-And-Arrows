@@ -1,7 +1,7 @@
 package com.cursee.more_bows_and_arrows.core;
 
-import com.cursee.more_bows_and_arrows.core.entity.ModEntityTier;
 import com.cursee.more_bows_and_arrows.core.entity.TypedArrowEntity;
+import com.cursee.more_bows_and_arrows.core.item.ModArrowItemTier;
 import com.cursee.more_bows_and_arrows.core.registry.ModArrowItemsFabric;
 import it.unimi.dsi.fastutil.objects.Object2ObjectMap;
 import it.unimi.dsi.fastutil.objects.Object2ObjectMaps;
@@ -27,7 +27,7 @@ public class DispenserRegistryFabric {
 //        DispenserBlock.registerBehavior(ModArrowItemsFabric.AMETHYST_ARROW, new AbstractProjectileDispenseBehavior() {
 //            @Override
 //            protected Projectile getProjectile(Level level, Position position, ItemStack itemStack) {
-//                TypedArrowEntity arrow = new TypedArrowEntity(level, position.x(), position.y(), position.z(), ModEntityTier.AMETHYST, ModArrowItemsFabric.AMETHYST_ARROW);
+//                TypedArrowEntity arrow = new TypedArrowEntity(level, position.x(), position.y(), position.z(), ModArrowItemTier.AMETHYST, ModArrowItemsFabric.AMETHYST_ARROW);
 //                arrow.pickup = AbstractArrow.Pickup.ALLOWED;
 //                return arrow;
 //            }
@@ -35,7 +35,7 @@ public class DispenserRegistryFabric {
 //        DispenserBlock.registerBehavior(ModArrowItemsFabric.BAMBOO_ARROW, new AbstractProjectileDispenseBehavior() {
 //            @Override
 //            protected Projectile getProjectile(Level level, Position position, ItemStack itemStack) {
-//                TypedArrowEntity arrow = new TypedArrowEntity(level, position.x(), position.y(), position.z(), ModEntityTier.BAMBOO, ModArrowItemsFabric.BAMBOO_ARROW);
+//                TypedArrowEntity arrow = new TypedArrowEntity(level, position.x(), position.y(), position.z(), ModArrowItemTier.BAMBOO, ModArrowItemsFabric.BAMBOO_ARROW);
 //                arrow.pickup = AbstractArrow.Pickup.ALLOWED;
 //                return arrow;
 //            }
@@ -43,7 +43,7 @@ public class DispenserRegistryFabric {
 //        DispenserBlock.registerBehavior(ModArrowItemsFabric.BLAZE_ROD_ARROW, new AbstractProjectileDispenseBehavior() {
 //            @Override
 //            protected Projectile getProjectile(Level level, Position position, ItemStack itemStack) {
-//                TypedArrowEntity arrow = new TypedArrowEntity(level, position.x(), position.y(), position.z(), ModEntityTier.BLAZE_ROD, ModArrowItemsFabric.BLAZE_ROD_ARROW);
+//                TypedArrowEntity arrow = new TypedArrowEntity(level, position.x(), position.y(), position.z(), ModArrowItemTier.BLAZE_ROD, ModArrowItemsFabric.BLAZE_ROD_ARROW);
 //                arrow.pickup = AbstractArrow.Pickup.ALLOWED;
 //                return arrow;
 //            }
@@ -51,7 +51,7 @@ public class DispenserRegistryFabric {
 //        DispenserBlock.registerBehavior(ModArrowItemsFabric.BONE_ARROW, new AbstractProjectileDispenseBehavior() {
 //            @Override
 //            protected Projectile getProjectile(Level level, Position position, ItemStack itemStack) {
-//                TypedArrowEntity arrow = new TypedArrowEntity(level, position.x(), position.y(), position.z(), ModEntityTier.BONE, ModArrowItemsFabric.BONE_ARROW);
+//                TypedArrowEntity arrow = new TypedArrowEntity(level, position.x(), position.y(), position.z(), ModArrowItemTier.BONE, ModArrowItemsFabric.BONE_ARROW);
 //                arrow.pickup = AbstractArrow.Pickup.ALLOWED;
 //                return arrow;
 //            }
@@ -59,7 +59,7 @@ public class DispenserRegistryFabric {
 //        DispenserBlock.registerBehavior(ModArrowItemsFabric.CACTUS_ARROW, new AbstractProjectileDispenseBehavior() {
 //            @Override
 //            protected Projectile getProjectile(Level level, Position position, ItemStack itemStack) {
-//                TypedArrowEntity arrow = new TypedArrowEntity(level, position.x(), position.y(), position.z(), ModEntityTier.CACTUS, ModArrowItemsFabric.CACTUS_ARROW);
+//                TypedArrowEntity arrow = new TypedArrowEntity(level, position.x(), position.y(), position.z(), ModArrowItemTier.CACTUS, ModArrowItemsFabric.CACTUS_ARROW);
 //                arrow.pickup = AbstractArrow.Pickup.ALLOWED;
 //                return arrow;
 //            }
@@ -67,7 +67,7 @@ public class DispenserRegistryFabric {
 //        DispenserBlock.registerBehavior(ModArrowItemsFabric.COAL_ARROW, new AbstractProjectileDispenseBehavior() {
 //            @Override
 //            protected Projectile getProjectile(Level level, Position position, ItemStack itemStack) {
-//                TypedArrowEntity arrow = new TypedArrowEntity(level, position.x(), position.y(), position.z(), ModEntityTier.COAL, ModArrowItemsFabric.COAL_ARROW);
+//                TypedArrowEntity arrow = new TypedArrowEntity(level, position.x(), position.y(), position.z(), ModArrowItemTier.COAL, ModArrowItemsFabric.COAL_ARROW);
 //                arrow.pickup = AbstractArrow.Pickup.ALLOWED;
 //                return arrow;
 //            }
@@ -75,7 +75,7 @@ public class DispenserRegistryFabric {
 //        DispenserBlock.registerBehavior(ModArrowItemsFabric.COPPER_ARROW, new AbstractProjectileDispenseBehavior() {
 //            @Override
 //            protected Projectile getProjectile(Level level, Position position, ItemStack itemStack) {
-//                TypedArrowEntity arrow = new TypedArrowEntity(level, position.x(), position.y(), position.z(), ModEntityTier.COPPER, ModArrowItemsFabric.COPPER_ARROW);
+//                TypedArrowEntity arrow = new TypedArrowEntity(level, position.x(), position.y(), position.z(), ModArrowItemTier.COPPER, ModArrowItemsFabric.COPPER_ARROW);
 //                arrow.pickup = AbstractArrow.Pickup.ALLOWED;
 //                return arrow;
 //            }
@@ -83,7 +83,7 @@ public class DispenserRegistryFabric {
 //        DispenserBlock.registerBehavior(ModArrowItemsFabric.DIAMOND_ARROW, new AbstractProjectileDispenseBehavior() {
 //            @Override
 //            protected Projectile getProjectile(Level level, Position position, ItemStack itemStack) {
-//                TypedArrowEntity arrow = new TypedArrowEntity(level, position.x(), position.y(), position.z(), ModEntityTier.DIAMOND, ModArrowItemsFabric.DIAMOND_ARROW);
+//                TypedArrowEntity arrow = new TypedArrowEntity(level, position.x(), position.y(), position.z(), ModArrowItemTier.DIAMOND, ModArrowItemsFabric.DIAMOND_ARROW);
 //                arrow.pickup = AbstractArrow.Pickup.ALLOWED;
 //                return arrow;
 //            }
@@ -91,7 +91,7 @@ public class DispenserRegistryFabric {
 //        DispenserBlock.registerBehavior(ModArrowItemsFabric.EMERALD_ARROW, new AbstractProjectileDispenseBehavior() {
 //            @Override
 //            protected Projectile getProjectile(Level level, Position position, ItemStack itemStack) {
-//                TypedArrowEntity arrow = new TypedArrowEntity(level, position.x(), position.y(), position.z(), ModEntityTier.EMERALD, ModArrowItemsFabric.EMERALD_ARROW);
+//                TypedArrowEntity arrow = new TypedArrowEntity(level, position.x(), position.y(), position.z(), ModArrowItemTier.EMERALD, ModArrowItemsFabric.EMERALD_ARROW);
 //                arrow.pickup = AbstractArrow.Pickup.ALLOWED;
 //                return arrow;
 //            }
@@ -99,7 +99,7 @@ public class DispenserRegistryFabric {
 //        DispenserBlock.registerBehavior(ModArrowItemsFabric.ENDER_PEARL_ARROW, new AbstractProjectileDispenseBehavior() {
 //            @Override
 //            protected Projectile getProjectile(Level level, Position position, ItemStack itemStack) {
-//                TypedArrowEntity arrow = new TypedArrowEntity(level, position.x(), position.y(), position.z(), ModEntityTier.ENDER_PEARL, ModArrowItemsFabric.ENDER_PEARL_ARROW);
+//                TypedArrowEntity arrow = new TypedArrowEntity(level, position.x(), position.y(), position.z(), ModArrowItemTier.ENDER_PEARL, ModArrowItemsFabric.ENDER_PEARL_ARROW);
 //                arrow.pickup = AbstractArrow.Pickup.ALLOWED;
 //                return arrow;
 //            }
@@ -107,7 +107,7 @@ public class DispenserRegistryFabric {
 //        DispenserBlock.registerBehavior(ModArrowItemsFabric.FLINT_AND_STEEL_ARROW, new AbstractProjectileDispenseBehavior() {
 //            @Override
 //            protected Projectile getProjectile(Level level, Position position, ItemStack itemStack) {
-//                TypedArrowEntity arrow = new TypedArrowEntity(level, position.x(), position.y(), position.z(), ModEntityTier.FLINT_AND_STEEL, ModArrowItemsFabric.FLINT_AND_STEEL_ARROW);
+//                TypedArrowEntity arrow = new TypedArrowEntity(level, position.x(), position.y(), position.z(), ModArrowItemTier.FLINT_AND_STEEL, ModArrowItemsFabric.FLINT_AND_STEEL_ARROW);
 //                arrow.pickup = AbstractArrow.Pickup.ALLOWED;
 //                return arrow;
 //            }
@@ -115,7 +115,7 @@ public class DispenserRegistryFabric {
 //        DispenserBlock.registerBehavior(ModArrowItemsFabric.FLINT_ARROW, new AbstractProjectileDispenseBehavior() {
 //            @Override
 //            protected Projectile getProjectile(Level level, Position position, ItemStack itemStack) {
-//                TypedArrowEntity arrow = new TypedArrowEntity(level, position.x(), position.y(), position.z(), ModEntityTier.FLINT, ModArrowItemsFabric.FLINT_ARROW);
+//                TypedArrowEntity arrow = new TypedArrowEntity(level, position.x(), position.y(), position.z(), ModArrowItemTier.FLINT, ModArrowItemsFabric.FLINT_ARROW);
 //                arrow.pickup = AbstractArrow.Pickup.ALLOWED;
 //                return arrow;
 //            }
@@ -123,7 +123,7 @@ public class DispenserRegistryFabric {
 //        DispenserBlock.registerBehavior(ModArrowItemsFabric.GOLD_ARROW, new AbstractProjectileDispenseBehavior() {
 //            @Override
 //            protected Projectile getProjectile(Level level, Position position, ItemStack itemStack) {
-//                TypedArrowEntity arrow = new TypedArrowEntity(level, position.x(), position.y(), position.z(), ModEntityTier.GOLD, ModArrowItemsFabric.GOLD_ARROW);
+//                TypedArrowEntity arrow = new TypedArrowEntity(level, position.x(), position.y(), position.z(), ModArrowItemTier.GOLD, ModArrowItemsFabric.GOLD_ARROW);
 //                arrow.pickup = AbstractArrow.Pickup.ALLOWED;
 //                return arrow;
 //            }
@@ -131,7 +131,7 @@ public class DispenserRegistryFabric {
 //        DispenserBlock.registerBehavior(ModArrowItemsFabric.IRON_ARROW, new AbstractProjectileDispenseBehavior() {
 //            @Override
 //            protected Projectile getProjectile(Level level, Position position, ItemStack itemStack) {
-//                TypedArrowEntity arrow = new TypedArrowEntity(level, position.x(), position.y(), position.z(), ModEntityTier.IRON, ModArrowItemsFabric.IRON_ARROW);
+//                TypedArrowEntity arrow = new TypedArrowEntity(level, position.x(), position.y(), position.z(), ModArrowItemTier.IRON, ModArrowItemsFabric.IRON_ARROW);
 //                arrow.pickup = AbstractArrow.Pickup.ALLOWED;
 //                return arrow;
 //            }
@@ -139,7 +139,7 @@ public class DispenserRegistryFabric {
 //        DispenserBlock.registerBehavior(ModArrowItemsFabric.LAPIS_ARROW, new AbstractProjectileDispenseBehavior() {
 //            @Override
 //            protected Projectile getProjectile(Level level, Position position, ItemStack itemStack) {
-//                TypedArrowEntity arrow = new TypedArrowEntity(level, position.x(), position.y(), position.z(), ModEntityTier.LAPIS, ModArrowItemsFabric.LAPIS_ARROW);
+//                TypedArrowEntity arrow = new TypedArrowEntity(level, position.x(), position.y(), position.z(), ModArrowItemTier.LAPIS, ModArrowItemsFabric.LAPIS_ARROW);
 //                arrow.pickup = AbstractArrow.Pickup.ALLOWED;
 //                return arrow;
 //            }
@@ -147,7 +147,7 @@ public class DispenserRegistryFabric {
 //        DispenserBlock.registerBehavior(ModArrowItemsFabric.MOSS_ARROW, new AbstractProjectileDispenseBehavior() {
 //            @Override
 //            protected Projectile getProjectile(Level level, Position position, ItemStack itemStack) {
-//                TypedArrowEntity arrow = new TypedArrowEntity(level, position.x(), position.y(), position.z(), ModEntityTier.MOSS, ModArrowItemsFabric.MOSS_ARROW);
+//                TypedArrowEntity arrow = new TypedArrowEntity(level, position.x(), position.y(), position.z(), ModArrowItemTier.MOSS, ModArrowItemsFabric.MOSS_ARROW);
 //                arrow.pickup = AbstractArrow.Pickup.ALLOWED;
 //                return arrow;
 //            }
@@ -155,7 +155,7 @@ public class DispenserRegistryFabric {
 //        DispenserBlock.registerBehavior(ModArrowItemsFabric.NETHERITE_ARROW, new AbstractProjectileDispenseBehavior() {
 //            @Override
 //            protected Projectile getProjectile(Level level, Position position, ItemStack itemStack) {
-//                TypedArrowEntity arrow = new TypedArrowEntity(level, position.x(), position.y(), position.z(), ModEntityTier.NETHERITE, ModArrowItemsFabric.NETHERITE_ARROW);
+//                TypedArrowEntity arrow = new TypedArrowEntity(level, position.x(), position.y(), position.z(), ModArrowItemTier.NETHERITE, ModArrowItemsFabric.NETHERITE_ARROW);
 //                arrow.pickup = AbstractArrow.Pickup.ALLOWED;
 //                return arrow;
 //            }
@@ -163,7 +163,7 @@ public class DispenserRegistryFabric {
 //        DispenserBlock.registerBehavior(ModArrowItemsFabric.OBSIDIAN_ARROW, new AbstractProjectileDispenseBehavior() {
 //            @Override
 //            protected Projectile getProjectile(Level level, Position position, ItemStack itemStack) {
-//                TypedArrowEntity arrow = new TypedArrowEntity(level, position.x(), position.y(), position.z(), ModEntityTier.OBSIDIAN, ModArrowItemsFabric.OBSIDIAN_ARROW);
+//                TypedArrowEntity arrow = new TypedArrowEntity(level, position.x(), position.y(), position.z(), ModArrowItemTier.OBSIDIAN, ModArrowItemsFabric.OBSIDIAN_ARROW);
 //                arrow.pickup = AbstractArrow.Pickup.ALLOWED;
 //                return arrow;
 //            }
@@ -171,7 +171,7 @@ public class DispenserRegistryFabric {
 //        DispenserBlock.registerBehavior(ModArrowItemsFabric.PAPER_ARROW, new AbstractProjectileDispenseBehavior() {
 //            @Override
 //            protected Projectile getProjectile(Level level, Position position, ItemStack itemStack) {
-//                TypedArrowEntity arrow = new TypedArrowEntity(level, position.x(), position.y(), position.z(), ModEntityTier.PAPER, ModArrowItemsFabric.PAPER_ARROW);
+//                TypedArrowEntity arrow = new TypedArrowEntity(level, position.x(), position.y(), position.z(), ModArrowItemTier.PAPER, ModArrowItemsFabric.PAPER_ARROW);
 //                arrow.pickup = AbstractArrow.Pickup.ALLOWED;
 //                return arrow;
 //            }
@@ -179,7 +179,7 @@ public class DispenserRegistryFabric {
 //        DispenserBlock.registerBehavior(ModArrowItemsFabric.TNT_ARROW, new AbstractProjectileDispenseBehavior() {
 //            @Override
 //            protected Projectile getProjectile(Level level, Position position, ItemStack itemStack) {
-//                TypedArrowEntity arrow = new TypedArrowEntity(level, position.x(), position.y(), position.z(), ModEntityTier.TNT, ModArrowItemsFabric.TNT_ARROW);
+//                TypedArrowEntity arrow = new TypedArrowEntity(level, position.x(), position.y(), position.z(), ModArrowItemTier.TNT, ModArrowItemsFabric.TNT_ARROW);
 //                arrow.pickup = AbstractArrow.Pickup.ALLOWED;
 //                return arrow;
 //            }
@@ -196,35 +196,35 @@ public class DispenserRegistryFabric {
 
         DISPENSER_OBJECT_MAP.put(ModArrowItemsFabric.FLINT_AND_STEEL_ARROW, new AbstractProjectileDispenseBehavior() {
             public @NotNull Projectile getProjectile(@NotNull Level level, @NotNull Position pos, @NotNull ItemStack stack) {
-                TypedArrowEntity arrow = new TypedArrowEntity(level, pos.x(), pos.y(), pos.z(), ModEntityTier.FLINT_AND_STEEL, ModArrowItemsFabric.FLINT_AND_STEEL_ARROW);
+                TypedArrowEntity arrow = new TypedArrowEntity(level, pos.x(), pos.y(), pos.z(), ModArrowItemTier.FLINT_AND_STEEL, ModArrowItemsFabric.FLINT_AND_STEEL_ARROW);
                 arrow.pickup = AbstractArrow.Pickup.ALLOWED;
                 return arrow;
             }
         });
         DISPENSER_OBJECT_MAP.put(ModArrowItemsFabric.ENDER_PEARL_ARROW, new AbstractProjectileDispenseBehavior() {
             public @NotNull Projectile getProjectile(@NotNull Level level, @NotNull Position pos, @NotNull ItemStack stack) {
-                TypedArrowEntity arrow = new TypedArrowEntity(level, pos.x(), pos.y(), pos.z(), ModEntityTier.AMETHYST, ModArrowItemsFabric.AMETHYST_ARROW);
+                TypedArrowEntity arrow = new TypedArrowEntity(level, pos.x(), pos.y(), pos.z(), ModArrowItemTier.AMETHYST, ModArrowItemsFabric.AMETHYST_ARROW);
                 arrow.pickup = AbstractArrow.Pickup.ALLOWED;
                 return arrow;
             }
         });
         DISPENSER_OBJECT_MAP.put(ModArrowItemsFabric.TNT_ARROW, new AbstractProjectileDispenseBehavior() {
             public @NotNull Projectile getProjectile(@NotNull Level level, @NotNull Position pos, @NotNull ItemStack stack) {
-                TypedArrowEntity arrow = new TypedArrowEntity(level, pos.x(), pos.y(), pos.z(), ModEntityTier.AMETHYST, ModArrowItemsFabric.AMETHYST_ARROW);
+                TypedArrowEntity arrow = new TypedArrowEntity(level, pos.x(), pos.y(), pos.z(), ModArrowItemTier.AMETHYST, ModArrowItemsFabric.AMETHYST_ARROW);
                 arrow.pickup = AbstractArrow.Pickup.ALLOWED;
                 return arrow;
             }
         });
         DISPENSER_OBJECT_MAP.put(ModArrowItemsFabric.PAPER_ARROW, new AbstractProjectileDispenseBehavior() {
             public @NotNull Projectile getProjectile(@NotNull Level level, @NotNull Position pos, @NotNull ItemStack stack) {
-                TypedArrowEntity arrow = new TypedArrowEntity(level, pos.x(), pos.y(), pos.z(), ModEntityTier.AMETHYST, ModArrowItemsFabric.AMETHYST_ARROW);
+                TypedArrowEntity arrow = new TypedArrowEntity(level, pos.x(), pos.y(), pos.z(), ModArrowItemTier.AMETHYST, ModArrowItemsFabric.AMETHYST_ARROW);
                 arrow.pickup = AbstractArrow.Pickup.ALLOWED;
                 return arrow;
             }
         });
         DISPENSER_OBJECT_MAP.put(ModArrowItemsFabric.MOSS_ARROW, new AbstractProjectileDispenseBehavior() {
             public @NotNull Projectile getProjectile(@NotNull Level level, @NotNull Position pos, @NotNull ItemStack stack) {
-                TypedArrowEntity arrow = new TypedArrowEntity(level, pos.x(), pos.y(), pos.z(), ModEntityTier.AMETHYST, ModArrowItemsFabric.AMETHYST_ARROW);
+                TypedArrowEntity arrow = new TypedArrowEntity(level, pos.x(), pos.y(), pos.z(), ModArrowItemTier.AMETHYST, ModArrowItemsFabric.AMETHYST_ARROW);
                 arrow.pickup = AbstractArrow.Pickup.ALLOWED;
                 return arrow;
             }
@@ -232,70 +232,70 @@ public class DispenserRegistryFabric {
 
         DISPENSER_OBJECT_MAP.put(ModArrowItemsFabric.AMETHYST_ARROW, new AbstractProjectileDispenseBehavior() {
             public @NotNull Projectile getProjectile(@NotNull Level level, @NotNull Position pos, @NotNull ItemStack stack) {
-                TypedArrowEntity arrow = new TypedArrowEntity(level, pos.x(), pos.y(), pos.z(), ModEntityTier.AMETHYST, ModArrowItemsFabric.AMETHYST_ARROW);
+                TypedArrowEntity arrow = new TypedArrowEntity(level, pos.x(), pos.y(), pos.z(), ModArrowItemTier.AMETHYST, ModArrowItemsFabric.AMETHYST_ARROW);
                 arrow.pickup = AbstractArrow.Pickup.ALLOWED;
                 return arrow;
             }
         });
         DISPENSER_OBJECT_MAP.put(ModArrowItemsFabric.BAMBOO_ARROW, new AbstractProjectileDispenseBehavior() {
             public @NotNull Projectile getProjectile(@NotNull Level level, @NotNull Position pos, @NotNull ItemStack stack) {
-                TypedArrowEntity arrow = new TypedArrowEntity(level, pos.x(), pos.y(), pos.z(), ModEntityTier.AMETHYST, ModArrowItemsFabric.AMETHYST_ARROW);
+                TypedArrowEntity arrow = new TypedArrowEntity(level, pos.x(), pos.y(), pos.z(), ModArrowItemTier.AMETHYST, ModArrowItemsFabric.AMETHYST_ARROW);
                 arrow.pickup = AbstractArrow.Pickup.ALLOWED;
                 return arrow;
             }
         });
         DISPENSER_OBJECT_MAP.put(ModArrowItemsFabric.BLAZE_ROD_ARROW, new AbstractProjectileDispenseBehavior() {
             public @NotNull Projectile getProjectile(@NotNull Level level, @NotNull Position pos, @NotNull ItemStack stack) {
-                TypedArrowEntity arrow = new TypedArrowEntity(level, pos.x(), pos.y(), pos.z(), ModEntityTier.AMETHYST, ModArrowItemsFabric.AMETHYST_ARROW);
+                TypedArrowEntity arrow = new TypedArrowEntity(level, pos.x(), pos.y(), pos.z(), ModArrowItemTier.AMETHYST, ModArrowItemsFabric.AMETHYST_ARROW);
                 arrow.pickup = AbstractArrow.Pickup.ALLOWED;
                 return arrow;
             }
         });
         DISPENSER_OBJECT_MAP.put(ModArrowItemsFabric.BONE_ARROW, new AbstractProjectileDispenseBehavior() {
             public @NotNull Projectile getProjectile(@NotNull Level level, @NotNull Position pos, @NotNull ItemStack stack) {
-                TypedArrowEntity arrow = new TypedArrowEntity(level, pos.x(), pos.y(), pos.z(), ModEntityTier.AMETHYST, ModArrowItemsFabric.AMETHYST_ARROW);
+                TypedArrowEntity arrow = new TypedArrowEntity(level, pos.x(), pos.y(), pos.z(), ModArrowItemTier.AMETHYST, ModArrowItemsFabric.AMETHYST_ARROW);
                 arrow.pickup = AbstractArrow.Pickup.ALLOWED;
                 return arrow;
             }
         });
         DISPENSER_OBJECT_MAP.put(ModArrowItemsFabric.CACTUS_ARROW, new AbstractProjectileDispenseBehavior() {
             public @NotNull Projectile getProjectile(@NotNull Level level, @NotNull Position pos, @NotNull ItemStack stack) {
-                TypedArrowEntity arrow = new TypedArrowEntity(level, pos.x(), pos.y(), pos.z(), ModEntityTier.AMETHYST, ModArrowItemsFabric.AMETHYST_ARROW);
+                TypedArrowEntity arrow = new TypedArrowEntity(level, pos.x(), pos.y(), pos.z(), ModArrowItemTier.AMETHYST, ModArrowItemsFabric.AMETHYST_ARROW);
                 arrow.pickup = AbstractArrow.Pickup.ALLOWED;
                 return arrow;
             }
         });
         DISPENSER_OBJECT_MAP.put(ModArrowItemsFabric.COAL_ARROW, new AbstractProjectileDispenseBehavior() {
             public @NotNull Projectile getProjectile(@NotNull Level level, @NotNull Position pos, @NotNull ItemStack stack) {
-                TypedArrowEntity arrow = new TypedArrowEntity(level, pos.x(), pos.y(), pos.z(), ModEntityTier.AMETHYST, ModArrowItemsFabric.AMETHYST_ARROW);
+                TypedArrowEntity arrow = new TypedArrowEntity(level, pos.x(), pos.y(), pos.z(), ModArrowItemTier.AMETHYST, ModArrowItemsFabric.AMETHYST_ARROW);
                 arrow.pickup = AbstractArrow.Pickup.ALLOWED;
                 return arrow;
             }
         });
         DISPENSER_OBJECT_MAP.put(ModArrowItemsFabric.EMERALD_ARROW, new AbstractProjectileDispenseBehavior() {
             public @NotNull Projectile getProjectile(@NotNull Level level, @NotNull Position pos, @NotNull ItemStack stack) {
-                TypedArrowEntity arrow = new TypedArrowEntity(level, pos.x(), pos.y(), pos.z(), ModEntityTier.AMETHYST, ModArrowItemsFabric.AMETHYST_ARROW);
+                TypedArrowEntity arrow = new TypedArrowEntity(level, pos.x(), pos.y(), pos.z(), ModArrowItemTier.AMETHYST, ModArrowItemsFabric.AMETHYST_ARROW);
                 arrow.pickup = AbstractArrow.Pickup.ALLOWED;
                 return arrow;
             }
         });
         DISPENSER_OBJECT_MAP.put(ModArrowItemsFabric.LAPIS_ARROW, new AbstractProjectileDispenseBehavior() {
             public @NotNull Projectile getProjectile(@NotNull Level level, @NotNull Position pos, @NotNull ItemStack stack) {
-                TypedArrowEntity arrow = new TypedArrowEntity(level, pos.x(), pos.y(), pos.z(), ModEntityTier.AMETHYST, ModArrowItemsFabric.AMETHYST_ARROW);
+                TypedArrowEntity arrow = new TypedArrowEntity(level, pos.x(), pos.y(), pos.z(), ModArrowItemTier.AMETHYST, ModArrowItemsFabric.AMETHYST_ARROW);
                 arrow.pickup = AbstractArrow.Pickup.ALLOWED;
                 return arrow;
             }
         });
         DISPENSER_OBJECT_MAP.put(ModArrowItemsFabric.OBSIDIAN_ARROW, new AbstractProjectileDispenseBehavior() {
             public @NotNull Projectile getProjectile(@NotNull Level level, @NotNull Position pos, @NotNull ItemStack stack) {
-                TypedArrowEntity arrow = new TypedArrowEntity(level, pos.x(), pos.y(), pos.z(), ModEntityTier.AMETHYST, ModArrowItemsFabric.AMETHYST_ARROW);
+                TypedArrowEntity arrow = new TypedArrowEntity(level, pos.x(), pos.y(), pos.z(), ModArrowItemTier.AMETHYST, ModArrowItemsFabric.AMETHYST_ARROW);
                 arrow.pickup = AbstractArrow.Pickup.ALLOWED;
                 return arrow;
             }
         });
         DISPENSER_OBJECT_MAP.put(ModArrowItemsFabric.FLINT_ARROW, new AbstractProjectileDispenseBehavior() {
             public @NotNull Projectile getProjectile(@NotNull Level level, @NotNull Position pos, @NotNull ItemStack stack) {
-                TypedArrowEntity arrow = new TypedArrowEntity(level, pos.x(), pos.y(), pos.z(), ModEntityTier.AMETHYST, ModArrowItemsFabric.AMETHYST_ARROW);
+                TypedArrowEntity arrow = new TypedArrowEntity(level, pos.x(), pos.y(), pos.z(), ModArrowItemTier.AMETHYST, ModArrowItemsFabric.AMETHYST_ARROW);
                 arrow.pickup = AbstractArrow.Pickup.ALLOWED;
                 return arrow;
             }
@@ -303,35 +303,35 @@ public class DispenserRegistryFabric {
 
         DISPENSER_OBJECT_MAP.put(ModArrowItemsFabric.IRON_ARROW, new AbstractProjectileDispenseBehavior() {
             public @NotNull Projectile getProjectile(@NotNull Level level, @NotNull Position pos, @NotNull ItemStack stack) {
-                TypedArrowEntity arrow = new TypedArrowEntity(level, pos.x(), pos.y(), pos.z(), ModEntityTier.AMETHYST, ModArrowItemsFabric.AMETHYST_ARROW);
+                TypedArrowEntity arrow = new TypedArrowEntity(level, pos.x(), pos.y(), pos.z(), ModArrowItemTier.AMETHYST, ModArrowItemsFabric.AMETHYST_ARROW);
                 arrow.pickup = AbstractArrow.Pickup.ALLOWED;
                 return arrow;
             }
         });
         DISPENSER_OBJECT_MAP.put(ModArrowItemsFabric.COPPER_ARROW, new AbstractProjectileDispenseBehavior() {
             public @NotNull Projectile getProjectile(@NotNull Level level, @NotNull Position pos, @NotNull ItemStack stack) {
-                TypedArrowEntity arrow = new TypedArrowEntity(level, pos.x(), pos.y(), pos.z(), ModEntityTier.AMETHYST, ModArrowItemsFabric.AMETHYST_ARROW);
+                TypedArrowEntity arrow = new TypedArrowEntity(level, pos.x(), pos.y(), pos.z(), ModArrowItemTier.AMETHYST, ModArrowItemsFabric.AMETHYST_ARROW);
                 arrow.pickup = AbstractArrow.Pickup.ALLOWED;
                 return arrow;
             }
         });
         DISPENSER_OBJECT_MAP.put(ModArrowItemsFabric.GOLD_ARROW, new AbstractProjectileDispenseBehavior() {
             public @NotNull Projectile getProjectile(@NotNull Level level, @NotNull Position pos, @NotNull ItemStack stack) {
-                TypedArrowEntity arrow = new TypedArrowEntity(level, pos.x(), pos.y(), pos.z(), ModEntityTier.AMETHYST, ModArrowItemsFabric.AMETHYST_ARROW);
+                TypedArrowEntity arrow = new TypedArrowEntity(level, pos.x(), pos.y(), pos.z(), ModArrowItemTier.AMETHYST, ModArrowItemsFabric.AMETHYST_ARROW);
                 arrow.pickup = AbstractArrow.Pickup.ALLOWED;
                 return arrow;
             }
         });
         DISPENSER_OBJECT_MAP.put(ModArrowItemsFabric.DIAMOND_ARROW, new AbstractProjectileDispenseBehavior() {
             public @NotNull Projectile getProjectile(@NotNull Level level, @NotNull Position pos, @NotNull ItemStack stack) {
-                TypedArrowEntity arrow = new TypedArrowEntity(level, pos.x(), pos.y(), pos.z(), ModEntityTier.AMETHYST, ModArrowItemsFabric.AMETHYST_ARROW);
+                TypedArrowEntity arrow = new TypedArrowEntity(level, pos.x(), pos.y(), pos.z(), ModArrowItemTier.AMETHYST, ModArrowItemsFabric.AMETHYST_ARROW);
                 arrow.pickup = AbstractArrow.Pickup.ALLOWED;
                 return arrow;
             }
         });
         DISPENSER_OBJECT_MAP.put(ModArrowItemsFabric.NETHERITE_ARROW, new AbstractProjectileDispenseBehavior() {
             public @NotNull Projectile getProjectile(@NotNull Level level, @NotNull Position pos, @NotNull ItemStack stack) {
-                TypedArrowEntity arrow = new TypedArrowEntity(level, pos.x(), pos.y(), pos.z(), ModEntityTier.AMETHYST, ModArrowItemsFabric.AMETHYST_ARROW);
+                TypedArrowEntity arrow = new TypedArrowEntity(level, pos.x(), pos.y(), pos.z(), ModArrowItemTier.AMETHYST, ModArrowItemsFabric.AMETHYST_ARROW);
                 arrow.pickup = AbstractArrow.Pickup.ALLOWED;
                 return arrow;
             }

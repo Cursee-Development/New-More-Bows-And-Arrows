@@ -1,8 +1,8 @@
 package com.cursee.more_bows_and_arrows.platform;
 
-import com.cursee.more_bows_and_arrows.core.entity.ModEntityTier;
-import com.cursee.more_bows_and_arrows.core.item.TypedArrowItem;
+import com.cursee.more_bows_and_arrows.core.item.ModArrowItemTier;
 import com.cursee.more_bows_and_arrows.core.registry.ModArrowItemsFabric;
+import com.cursee.more_bows_and_arrows.core.registry.ModBowItemsFabric;
 import com.cursee.more_bows_and_arrows.core.registry.ModEntityTypesFabric;
 import com.cursee.more_bows_and_arrows.platform.services.IPlatformHelper;
 import net.fabricmc.loader.api.FabricLoader;
@@ -29,7 +29,7 @@ public class FabricPlatformHelper implements IPlatformHelper {
     }
 
     @Override
-    public EntityType entityFromTier(ModEntityTier tier) {
+    public EntityType entityFromTier(ModArrowItemTier tier) {
         return switch (tier) {
             case AMETHYST -> ModEntityTypesFabric.AMETHYST_ARROW;
             case BAMBOO -> ModEntityTypesFabric.BAMBOO_ARROW;
@@ -55,7 +55,7 @@ public class FabricPlatformHelper implements IPlatformHelper {
     }
 
     @Override
-    public Item itemFromType(TypedArrowItem.Type type) {
+    public Item itemFromType(ModArrowItemTier type) {
         return switch(type) {
             case AMETHYST -> ModArrowItemsFabric.AMETHYST_ARROW;
             case BAMBOO -> ModArrowItemsFabric.BAMBOO_ARROW;
@@ -78,5 +78,35 @@ public class FabricPlatformHelper implements IPlatformHelper {
             case PAPER -> ModArrowItemsFabric.PAPER_ARROW;
             case TNT -> ModArrowItemsFabric.TNT_ARROW;
         };
+    }
+
+    @Override
+    public Item blaze_bow() {
+        return ModBowItemsFabric.BLAZE_BOW;
+    }
+
+    @Override
+    public Item bamboo_bow() {
+        return ModBowItemsFabric.BAMBOO_BOW;
+    }
+
+    @Override
+    public Item copper_bow() {
+        return ModBowItemsFabric.COPPER_BOW;
+    }
+
+    @Override
+    public Item moss_bow() {
+        return ModBowItemsFabric.MOSS_BOW;
+    }
+
+    @Override
+    public Item paper_bow() {
+        return ModBowItemsFabric.PAPER_BOW;
+    }
+
+    @Override
+    public Item iron_bow() {
+        return ModBowItemsFabric.IRON_BOW;
     }
 }

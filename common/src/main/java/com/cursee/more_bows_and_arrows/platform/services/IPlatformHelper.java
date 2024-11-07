@@ -1,9 +1,7 @@
 package com.cursee.more_bows_and_arrows.platform.services;
 
-import com.cursee.more_bows_and_arrows.core.entity.ModEntityTier;
-import com.cursee.more_bows_and_arrows.core.item.TypedArrowItem;
+import com.cursee.more_bows_and_arrows.core.item.ModArrowItemTier;
 import net.minecraft.world.entity.EntityType;
-import net.minecraft.world.entity.projectile.AbstractArrow;
 import net.minecraft.world.item.Item;
 
 public interface IPlatformHelper {
@@ -40,7 +38,19 @@ public interface IPlatformHelper {
         return isDevelopmentEnvironment() ? "development" : "production";
     }
 
-    EntityType entityFromTier(ModEntityTier tier);
+    EntityType entityFromTier(ModArrowItemTier tier);
 
-    Item itemFromType(TypedArrowItem.Type type);
+    Item itemFromType(ModArrowItemTier type);
+
+    Item blaze_bow();
+
+    Item bamboo_bow();
+
+    Item copper_bow();
+
+    Item moss_bow();
+
+    Item paper_bow();
+
+    Item iron_bow();
 }
